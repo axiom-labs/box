@@ -9,4 +9,4 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-sudo apt-get -y install alsa-utils rsync sox ntpdate
+sudo apt-get -y install alsa-utils rsync sox ntpdate gcc make pkg-config automake libtool libicu-dev libpcre2-dev libasound2-dev

@@ -13,8 +13,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.."
 repo_path="$PWD"
 
 for service in systemd/*.service; do
-    sed "s:/home/pi/axiom:${repo_path}:g" "$service" \
-        > "/lib/systemd/system/$(basename "$service")"
+    echo ${repo_path}
+    # sed "s:/home/pi/axiom:${repo_path}:g" "$service" \
+        # > "/lib/systemd/system/$(basename "$service")"
 done
 
 systemctl enable alsa-init.service
