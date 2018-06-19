@@ -11,7 +11,7 @@ GOOGLE_SERVER_ADDRESS = ('speech.googleapis.com', 443)
 
 def check_wifi_is_configured():
     """Check wpa_supplicant.conf has at least one network configured."""
-    output = subprocess.check_output(['sudo', 'cat' WPA_CONF_PATH]).decode('utf-8')
+    output = subprocess.check_output(['sudo', 'cat', WPA_CONF_PATH]).decode('utf-8')
 
     return 'network=' in output
 
