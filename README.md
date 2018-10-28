@@ -10,12 +10,20 @@ cd ~
 git clone git@github.com:axiom-labs/box.git axiom
 ```
 
-## Configure
+The following instructions will depend on your hardware setup.
+
+## AIY
 ```
 cd ~/axiom
-sudo setup/install_deps.sh
-sudo setup/install_drivers.sh
-sudo setup/install_services.sh
+sudo aiy/setup/install_deps.sh
+sudo aiy/setup/install_drivers.sh
+sudo aiy/setup/install_services.sh
+```
+
+## Matrix Creator
+```
+cd ~/axiom
+sudo matrix_creator/setup/install_deps.sh
 ```
 
 ## Reboot
